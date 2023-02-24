@@ -1,0 +1,44 @@
+html{
+    background-image: url("../imagenes/fondocomida2.jpg");
+}
+h1{
+    text-align: center;
+    color: black;
+}
+h2{
+    text-align: center;
+    background-color: bisque;
+}
+
+h3{
+    text-align: center;
+    background-color:pink;
+}
+.perfil{
+    width: 250px;
+    height: 300px;
+    border-radius: 50px;
+    border: 5px solid cornflowerblue;
+    cursor: pointer;
+}
+.perfil:hover{
+   transform: scale(2.0);
+}
+
+
+.volver{
+    display: inline-block;
+    margin-top: 10px;
+    background-color: brown;
+    padding: 20px;
+    color: black;
+    cursor: pointer;
+}
+.volver:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+.volver:active{
+    background-color: rgb(141, 235, 18);
+    color: rgb(208, 32, 82);
+}
