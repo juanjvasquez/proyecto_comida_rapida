@@ -1,29 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="PTO.css">
     <title>PRODUCTO</title>
 </head>
+
 <body>
     <div style="text-align: right;">
-        <a class="volver"href="../index.html">volver a INICIO</a>
+        <a class="volver" href="../index.html">volver a INICIO</a>
     </div>
-    <h2>MENU DE PRODUCTOS:</h2>
-    <table>
-        <tr>
-            <td><h3>Perro caliente</h3><img class="imagenes" src="../imagenes/perro caliente.jpg" alt="foto perro caliente"></td>
-            <td><h3>Pizza</h3><img class="imagenes" src="../imagenes/pizza.jpg" alt="foto pizza"></td>
-            <td><h3>Salchipapa</h3><img class="imagenes" src="../imagenes/salchipapas.jpg" alt="foto salchipapas"></td>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <td><h3>Arepa</h3><img class="imagenes" src="../imagenes/arepa.jpg" alt="foto arepa"></td>
-            <td><h3>Asado</h3><img class="imagenes"  src="../imagenes/asado.jpg" alt="foto asado"></td>
-            <td><h3>Hamburguesa</h3><img class="imagenes" src="../imagenes/hamburguesa.jpg" alt="foto hamburguesa"></td>
-        </tr>
-    </table>
+    <div>
+        <ul>
+            <li class="submenu">
+                <div style="text-align: right;">
+                    <img src="../imagenes/car.svg" alt="">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>imagen</th>
+                                    <th>nombre</th>
+                                    <th>precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-3">Vaciar carrito</a>
+                    </div>
+            </li>
+        </ul>
+    </div>
+    <main class="PRODUCTO container">
+        <h2>MENU DE PRODUCTOS:</h2>
+        <div class="box-container" id="lista-1">
+
+            <div class="box">
+                <img src="../imagenes/arepa.jpg" alt="">
+                <div class="product-tx">
+                    <h3>arepa rellena</h3>
+                    <p class="precio">11.000$</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../imagenes/asado.jpg" alt="">
+                <div class="product-tx">
+                    <h3>asado (250gr)</h3>
+                    <p class="precio">11.000$</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="2">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../imagenes/hamburguesa.jpg" alt="">
+                <div class="product-tx">
+                    <h3>hamburguesa artesanal</h3>
+                    <p class="precio">11.000$</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="3">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../imagenes/perro caliente.jpg" alt="">
+                <div class="product-tx">
+                    <h3>perro caliente</h3>
+                    <p class="precio">11.000$</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="4">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../imagenes/pizza.jpg" alt="">
+                <div class="product-tx">
+                    <h3>pizza</h3>
+                    <p class="precio">11.000$</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="5">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../imagenes/salchipapas.jpg" alt="">
+                <div class="product-tx">
+                    <h3>salchipapa</h3>
+                    <p class="precio">11.000$</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="6">agregar al carrito</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
     
+    <script src="PTO.js"></script>
 </body>
+
 </html>

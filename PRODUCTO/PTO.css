@@ -1,34 +1,116 @@
-html{
+html {
     background-image: url("../imagenes/fondocomida2.jpg");
 }
-h2{
-    text-align: left;
-    color: black;
-}
-h3{
-    text-align: center;
-    color: black;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-table{
-    border: blue;
-    margin: auto;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.imagenes{
-    width: 300px;
-    height: 300px;
+
+.btn-3 {
+    display: inline-block;
+    padding: 5px 25px;
+    background-color: #ff9000;
+    color: #FFFFFF;
     border-radius: 10px;
-    border: 5px solid #dc6d12;
-    cursor: pointer;
-
-}
-.imagenes:hover{
-    
-    transform: scale(1.2);
-
 }
 
-.volver{
+.btn-3 :hover {
+    background-color: #ef8700;
+}
+
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #77777797;
+    padding: 20px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+}
+
+th,td {
+    color: #FFFFFF;
+}
+
+.borrar {
+    background-color: #ff9000;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 800;
+}
+
+.box-container {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    border-top: 2px solid #ff9000;
+    padding: 20px;
+    border-radius: 15px;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
+    display: none;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4),
+.box:nth-child(5),
+.box:nth-child(6) {
+    display: inline-block;
+}
+
+.box img {
+    width: 120px;
+}
+
+.produc-txt h3 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.produc-txt p {
+    margin-bottom: 25px;
+}
+
+.precio {
+    font-size: 15px;
+    color: black;
+}
+
+.volver {
     display: inline-block;
     margin-top: 10px;
     background-color: brown;
@@ -36,11 +118,19 @@ table{
     color: black;
     cursor: pointer;
 }
-.volver:hover{
+
+.volver:hover {
     background-color: antiquewhite;
     color: black;
 }
-.volver:active{
+
+.volver:active {
     background-color: rgb(141, 235, 18);
     color: rgb(208, 32, 82);
+}
+
+@media (max-widt:991px) {
+    .submenu:hover #carrito {
+        width: 100%;
+    }
 }
