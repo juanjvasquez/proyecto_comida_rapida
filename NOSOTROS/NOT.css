@@ -1,44 +1,86 @@
-html{
-    background-image: url("../imagenes/fondocomida2.jpg");
-}
-h1{
-    text-align: center;
-    color: black;
-}
-h2{
-    text-align: center;
-    background-color: bisque;
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    margin: 0;
 }
 
+h1 {
+  
+}
 h3{
-    text-align: center;
-    background-color:pink;
-}
-.perfil{
-    width: 250px;
-    height: 300px;
-    border-radius: 50px;
-    border: 5px solid cornflowerblue;
-    cursor: pointer;
-}
-.perfil:hover{
-   transform: scale(2.0);
+    line-height: 1.3em;
+    font-size: 2rem;
 }
 
+p {
+    margin-bottom: 1.6em;
+}
 
-.volver{
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    letter-spacing: 5px;
+    font-size: 1.2em;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar ul li {
     display: inline-block;
-    margin-top: 10px;
-    background-color: brown;
-    padding: 20px;
-    color: black;
-    cursor: pointer;
 }
-.volver:hover{
-    background-color: antiquewhite;
-    color: black;
+
+.navbar ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
 }
-.volver:active{
-    background-color: rgb(141, 235, 18);
-    color: rgb(208, 32, 82);
+
+.navbar ul li a:hover {
+    background-color: #4a4a4a;
+}
+img {
+    width: 350px;
+}
+
+.main {
+    padding-top: 10rem;
+}
+
+.footer {
+    background: #333;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
 }
