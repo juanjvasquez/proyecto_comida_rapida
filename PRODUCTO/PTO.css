@@ -10,6 +10,10 @@ h1 {
     line-height: 1.3em;
     font-size: 2rem;
 }
+h3{
+    line-height: 1.3em;
+    font-size: 2rem;
+}
 
 p {
     margin-bottom: 1.6em;
@@ -73,16 +77,18 @@ p {
     padding: 10px;
     margin: auto;
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
+    /* oculto lo que queda fuera del .contenedor */
     contain: paint;
 }
-
+/* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap:30px;
     grid-row-gap: 30px;
+    /* width: 60%; */
     width: 100%;
     transition: .3s;
 }
@@ -124,6 +130,7 @@ p {
     border-radius: 5px;
     cursor: pointer;
 }
+/* seccion carrito */
 .carrito{
     border: 1px solid #666;
     width: 35%;
@@ -134,6 +141,7 @@ p {
     position: sticky !important;
     top: 0;
     transition: .3s;
+    /* Estilos para ocultar */
     margin-right: -100%;
     opacity: 0;
 }
@@ -146,6 +154,7 @@ p {
 .carrito .carrito-item{
     display: flex;
     align-items: center;
+    /* justify-content: space-between; */
     position: relative;
     border-bottom: 1px solid #666;
     padding: 20px;
@@ -240,25 +249,7 @@ p {
     scale: 1.05;
 }
 
-.mapa {
-    margin-top: 25px;
-    margin-bottom: 100px;
-    border-color: #4a4a4a;
-}
-.footer {
-    background: #333;
-    padding: 4rem 0;
-    text-align: center;
-    margin-top: 6rem;
-}
-
-.footer {
-    background: #333;
-    padding: 4rem 0;
-    text-align: center;
-    margin-top: 6rem;
-}
-
+/* SECCION RESPONSIVE */
 @media screen and (max-width: 850px) {
     .contenedor {
       display: block;
