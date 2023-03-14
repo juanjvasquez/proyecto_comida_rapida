@@ -10,7 +10,8 @@ h1 {
     line-height: 1.3em;
     font-size: 2rem;
 }
-h3{
+
+h2 {
     line-height: 1.3em;
     font-size: 2rem;
 }
@@ -18,6 +19,7 @@ h3{
 p {
     margin-bottom: 1.6em;
 }
+
 
 .container {
     width: 85%;
@@ -72,16 +74,18 @@ p {
     background-color: #4a4a4a;
 }
 
+.main {
+    padding-top: 10rem;
+}
 .contenedor{
     max-width: 1200px;
     padding: 10px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    /* oculto lo que queda fuera del .contenedor */
     contain: paint;
 }
-/* SECCION CONTENEDOR DE ITEMS */
+
 .contenedor .contenedor-items{
     margin-top: 30px;
     display: grid;
@@ -130,7 +134,7 @@ p {
     border-radius: 5px;
     cursor: pointer;
 }
-/* seccion carrito */
+
 .carrito{
     border: 1px solid #666;
     width: 35%;
@@ -249,7 +253,12 @@ p {
     scale: 1.05;
 }
 
-/* SECCION RESPONSIVE */
+.footer {
+    background: #333;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
 @media screen and (max-width: 850px) {
     .contenedor {
       display: block;
