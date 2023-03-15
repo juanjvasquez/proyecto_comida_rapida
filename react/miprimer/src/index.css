@@ -15,6 +15,9 @@ body {
     line-height: 1.3em;
     font-size: 2rem;
   }
+  h3{
+    line-height: 1.3em;
+  }
   
   p {
     margin-bottom: 1.6em;
@@ -252,7 +255,13 @@ body {
   .carrito-total .btn-pagar:hover{
     scale: 1.05;
   }
-  
+  .main {
+    padding-top: 10rem;
+}
+  img{
+    width: 300px;
+  }
+
   .footer {
     background: #333;
     padding: 4rem 0;
